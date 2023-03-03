@@ -1,3 +1,9 @@
-# Default ignored files
-/shelf/
-/workspace.xml
+/.idea
+/test-output/
+/target/
+.classpath/
+.classpath
+*.iml
+/bin
+*.html
+REST-API-AutomationReport.html
