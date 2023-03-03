@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f61bf594-54e7-410d-83fe-c752e2fc5800" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rest/api/automation/bookings/GetBookingDetailsErrorScenariosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rest/api/automation/bookings/GetBookingDetailsErrorScenariosTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
