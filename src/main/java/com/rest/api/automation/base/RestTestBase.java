@@ -5,6 +5,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
+import com.github.javafaker.Faker;
 import com.rest.api.automation.utils.*;
 import io.restassured.response.Response;
 import org.apache.commons.io.output.WriterOutputStream;
@@ -29,7 +30,8 @@ public class RestTestBase {
     protected CsvUtils csv = new CsvUtils();
     protected CommonMethods cm = new CommonMethods();
     protected HeadersUtils headersUtils = new HeadersUtils();
-    protected QueryParamsUtils queryParams = new QueryParamsUtils();
+    protected QueryParamsUtils queryParams = new QueryParamsUtils();//if QueryParams are present in the Request
+    protected static final Faker FAKER = new Faker();
 
     @BeforeSuite
     public void setUp() throws IOException {
@@ -56,11 +58,11 @@ public class RestTestBase {
 		Assert.assertEquals(res.getStatusCode(), statusCode);
     }
 
-    public String customReport(String message, Response response) {
-        String format = "<b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(\".exception\").click(function(){ $(this).next().toggle()}))'>"
-                + message + "</b>" + "<pre style='display:none'>" + response.asString() + "</pre>";
-        return format;
-    }
+//    public String customReport(String message, Response response) {
+//        String format = "<b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(\".exception\").click(function(){ $(this).next().toggle()}))'>"
+//                + message + "</b>" + "<pre style='display:none'>" + response.asString() + "</pre>";
+//        return format;
+//    }
 
     @BeforeMethod
     public void getMethodName(Method m) {
@@ -97,11 +99,5 @@ public class RestTestBase {
     public void afterSuite(ITestContext context) {
         System.out.println("in after suite************************************************");
         extent.flush();
-    }
-
-    @BeforeMethod
-    public void clearQueryParamAndHeaders() {
-        queryParams.clearQueryParams();
-        headersUtils.clearHeaders();
     }
 }

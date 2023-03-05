@@ -1,12 +1,20 @@
 package com.rest.api.automation.requestBuilder;
 
+import com.rest.api.automation.base.RestTestBase;
+import com.rest.api.automation.utils.ConfigHelper;
+import com.rest.api.automation.utils.RestAPIUtils;
+import com.rest.api.automation.utils.TestConstants;
+import io.restassured.response.Response;
 import org.json.JSONObject;
 
-public class Bookings {
+import java.util.List;
 
-    public JSONObject CreateBookingBody(String firstName, String lastName, String totalPrice, String depositPaid,
-                                        String additionalNeeds, String checkIn, String checkOut) {
+public class Bookings extends RestTestBase {
+    List<String[]> data = csv.readData_CSV(TestConstants.BOOKING_CSV);
+    String token;
 
+    public JSONObject BookingDetailsBody(String firstName, String lastName, String totalPrice, String depositPaid,
+                                         String additionalNeeds, String checkIn, String checkOut) {
         JSONObject body = new JSONObject();
         body.put("firstname", firstName);
         body.put("lastname", lastName);
@@ -22,5 +30,27 @@ public class Bookings {
         dates.put("checkin", checkIn);
         dates.put("checkout", checkOut);
         return dates;
+    }
+
+    public JSONObject createToken(String userName, String password) {
+        JSONObject token = new JSONObject();
+        token.put("username", userName);
+        token.put("password", password);
+        return token;
+    }
+
+    public JSONObject partialUpdateBooking(String firstName, String totalPrice) {
+        JSONObject partialUpdate = new JSONObject();
+        partialUpdate.put("firstname", firstName);
+        partialUpdate.put("totalprice", Integer.parseInt(totalPrice));
+        return partialUpdate;
+    }
+
+    public String getToken() {
+        String authBody = createToken(csv.getSpecificCSVData(data, 6, 1), csv.getSpecificCSVData(data, 7, 1)).toString();
+        Response tokenResp = cm.doPOST(ConfigHelper.returnPropVal("config", "createToken"), authBody);
+        token = RestAPIUtils.getSpecificStringJsonAttribute(tokenResp, new String[]{"token"})
+                .get("token");
+        return token;
     }
 }

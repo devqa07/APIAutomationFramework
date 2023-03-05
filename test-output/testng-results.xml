@@ -6,42 +6,42 @@
     <groups>
     </groups>
     <test started-at="2023-02-25T15:21:08 GST" name="APIAutomationFramework" finished-at="2023-02-25T15:21:14 GST" duration-ms="6430">
-      <class name="com.rest.api.automation.bookings.CreateBookingSuccessScenariosTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rest.api.automation.bookings.CreateBookingSuccessScenariosTest@233795b6]" started-at="2023-02-25T15:21:08 GST" name="setUp" finished-at="2023-02-25T15:21:08 GST" duration-ms="192" status="PASS">
+      <class name="com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@233795b6]" started-at="2023-02-25T15:21:08 GST" name="setUp" finished-at="2023-02-25T15:21:08 GST" duration-ms="192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="clearQueryParamAndHeaders()[pri:0, instance:com.rest.api.automation.bookings.CreateBookingSuccessScenariosTest@233795b6]" started-at="2023-02-25T15:21:08 GST" name="clearQueryParamAndHeaders" finished-at="2023-02-25T15:21:08 GST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="clearQueryParamAndHeaders()[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@233795b6]" started-at="2023-02-25T15:21:08 GST" name="clearQueryParamAndHeaders" finished-at="2023-02-25T15:21:08 GST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clearQueryParamAndHeaders -->
-        <test-method is-config="true" signature="getMethodName(java.lang.reflect.Method)[pri:0, instance:com.rest.api.automation.bookings.CreateBookingSuccessScenariosTest@233795b6]" started-at="2023-02-25T15:21:08 GST" name="getMethodName" finished-at="2023-02-25T15:21:08 GST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="getMethodName(java.lang.reflect.Method)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@233795b6]" started-at="2023-02-25T15:21:08 GST" name="getMethodName" finished-at="2023-02-25T15:21:08 GST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.rest.api.automation.bookings.CreateBookingSuccessScenariosTest.verifyCreateBooking()]]>
+                <![CDATA[public void com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest.verifyCreateBooking()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getMethodName -->
-        <test-method signature="verifyCreateBooking()[pri:0, instance:com.rest.api.automation.bookings.CreateBookingSuccessScenariosTest@233795b6]" started-at="2023-02-25T15:21:08 GST" name="verifyCreateBooking" finished-at="2023-02-25T15:21:14 GST" duration-ms="6358" status="PASS">
+        <test-method signature="verifyCreateBooking()[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@233795b6]" started-at="2023-02-25T15:21:08 GST" name="verifyCreateBooking" finished-at="2023-02-25T15:21:14 GST" duration-ms="6358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateBooking -->
-        <test-method is-config="true" signature="reportsUpdate(org.testng.ITestResult)[pri:0, instance:com.rest.api.automation.bookings.CreateBookingSuccessScenariosTest@233795b6]" started-at="2023-02-25T15:21:14 GST" name="reportsUpdate" finished-at="2023-02-25T15:21:14 GST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="reportsUpdate(org.testng.ITestResult)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@233795b6]" started-at="2023-02-25T15:21:14 GST" name="reportsUpdate" finished-at="2023-02-25T15:21:14 GST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyCreateBooking status=SUCCESS method=CreateBookingSuccessScenariosTest.verifyCreateBooking()[pri:0, instance:com.rest.api.automation.bookings.CreateBookingSuccessScenariosTest@233795b6] output={null}]]]>
+                <![CDATA[[TestResult name=verifyCreateBooking status=SUCCESS method=CreateBookingSuccessScenariosTest.verifyCreateBooking()[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@233795b6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportsUpdate -->
-        <test-method is-config="true" signature="afterSuite(org.testng.ITestContext)[pri:0, instance:com.rest.api.automation.bookings.CreateBookingSuccessScenariosTest@233795b6]" started-at="2023-02-25T15:21:14 GST" name="afterSuite" finished-at="2023-02-25T15:21:15 GST" duration-ms="203" status="PASS">
+        <test-method is-config="true" signature="afterSuite(org.testng.ITestContext)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@233795b6]" started-at="2023-02-25T15:21:14 GST" name="afterSuite" finished-at="2023-02-25T15:21:15 GST" duration-ms="203" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -52,7 +52,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.rest.api.automation.bookings.CreateBookingSuccessScenariosTest -->
+      </class> <!-- com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest -->
     </test> <!-- APIAutomationFramework -->
   </suite> <!-- Default Suite -->
 </testng-results>

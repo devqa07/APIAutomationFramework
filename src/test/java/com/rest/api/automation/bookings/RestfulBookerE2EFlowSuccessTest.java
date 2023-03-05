@@ -15,7 +15,7 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-public class RestfulBookerE2EFlowTest extends RestTestBase {
+public class RestfulBookerE2EFlowSuccessTest extends RestTestBase {
     BookingsBaseTest bs = new BookingsBaseTest();
     Bookings bookingReq = new Bookings();
     SimpleDateFormat formatter = new SimpleDateFormat("YYYY-MM-dd");
@@ -32,8 +32,8 @@ public class RestfulBookerE2EFlowTest extends RestTestBase {
         extentLog.info(customReport(methodName + ": This test Creates a new booking"));
         body = bookingReq.BookingDetailsBody(firstName, lastName, totalPrice, depositPaid, additionalNeeds, checkIn, checkOut).toString();
         response = cm.doPOST(ConfigHelper.returnPropVal("config", "booking"), body);
-        extentLog.log(Status.INFO, customReport("Click here to the View the Request", requestWriter.toString()));
-        extentLog.log(Status.INFO, customReport("HITS Endpoint to verify create a new booking-- click to see the Response ",
+        extentLog.log(Status.INFO, customReport("Click here to the view the Request", requestWriter.toString()));
+        extentLog.log(Status.INFO, customReport("Click here to the view the Response",
                 response.asString()));
         checkSuccessResponse(response, HttpStatus.SC_OK);
         bs.validateCreateBookingResponse(response, firstName, lastName, totalPrice, depositPaid, additionalNeeds, checkIn, checkOut);
@@ -45,8 +45,8 @@ public class RestfulBookerE2EFlowTest extends RestTestBase {
     public void verifyGetBookingDetails() {
         extentLog.info(customReport(methodName + ": This test verifies Get Booking Details "));
         response = cm.doGET(ConfigHelper.returnPropVal("config", "booking") + "/" + bookingId);
-        extentLog.log(Status.INFO, customReport("Click here to the View the Request", requestWriter.toString()));
-        extentLog.log(Status.INFO, customReport("HITS Endpoint to verify Get Booking Details -- click to see the Response ",
+        extentLog.log(Status.INFO, customReport("Click here to the view the Request", requestWriter.toString()));
+        extentLog.log(Status.INFO, customReport("Click here to the view the Response",
                 response.asString()));
         checkSuccessResponse(response, HttpStatus.SC_OK);
         bs.validateGetBookingResponse(response);
@@ -58,8 +58,8 @@ public class RestfulBookerE2EFlowTest extends RestTestBase {
         headersUtils.setHeaders(TestConstants.COOKIE_HEADER, "token=" + bookingReq.getToken());
         body = bookingReq.BookingDetailsBody(csv.getSpecificCSVData(data, 1, 2), lastName, totalPrice, depositPaid, additionalNeeds, checkIn, checkOut).toString();
         response = cm.doPUT(ConfigHelper.returnPropVal("config", "booking") + "/" + bookingId, headersUtils.getHeaderMap(), body);
-        extentLog.log(Status.INFO, customReport("Click here to the View the Request", requestWriter.toString()));
-        extentLog.log(Status.INFO, customReport("HITS Endpoint to verify update booking details-- click to see the Response ",
+        extentLog.log(Status.INFO, customReport("Click here to the view the Request", requestWriter.toString()));
+        extentLog.log(Status.INFO, customReport("Click here to the view the Response",
                 response.asString()));
         checkSuccessResponse(response, HttpStatus.SC_OK);
         bs.validateUpdateBookingResponse(response, csv.getSpecificCSVData(data, 1, 2));
@@ -71,8 +71,8 @@ public class RestfulBookerE2EFlowTest extends RestTestBase {
         headersUtils.setHeaders(TestConstants.COOKIE_HEADER, "token=" + bookingReq.getToken());
         body = bookingReq.partialUpdateBooking(csv.getSpecificCSVData(data, 1, 3), csv.getSpecificCSVData(data, 3, 2)).toString();
         response = cm.doPATCH(ConfigHelper.returnPropVal("config", "booking") + "/" + bookingId, headersUtils.getHeaderMap(), body);
-        extentLog.log(Status.INFO, customReport("Click here to the View the Request", requestWriter.toString()));
-        extentLog.log(Status.INFO, customReport("HITS Endpoint to verify update booking details-- click to see the Response ",
+        extentLog.log(Status.INFO, customReport("Click here to the view the Request", requestWriter.toString()));
+        extentLog.log(Status.INFO, customReport("Click here to the view the Response",
                 response.asString()));
         checkSuccessResponse(response, HttpStatus.SC_OK);
         bs.validatePartialUpdateBookingResponse(response, csv.getSpecificCSVData(data, 1, 3), csv.getSpecificCSVData(data, 3, 2));
@@ -83,8 +83,8 @@ public class RestfulBookerE2EFlowTest extends RestTestBase {
         extentLog.info(customReport(methodName + ": This test verifies delete booking"));
         headersUtils.setHeaders(TestConstants.COOKIE_HEADER, "token=" + bookingReq.getToken());
         response = cm.doDELETE(ConfigHelper.returnPropVal("config", "booking") + "/" + bookingId, headersUtils.getHeaderMap());
-        extentLog.log(Status.INFO, customReport("Click here to the View the Request", requestWriter.toString()));
-        extentLog.log(Status.INFO, customReport("HITS Endpoint to verify delete booking-- click to see the Response ",
+        extentLog.log(Status.INFO, customReport("Click here to the view the Request", requestWriter.toString()));
+        extentLog.log(Status.INFO, customReport("Click here to the view the Response",
                 response.asString()));
         checkSuccessResponse(response, HttpStatus.SC_CREATED);
     }
@@ -93,8 +93,8 @@ public class RestfulBookerE2EFlowTest extends RestTestBase {
     public void verifyBookingIsDeleted() {
         extentLog.info(customReport(methodName + ": This test verifies booking is deleted or not"));
         response = cm.doGET(ConfigHelper.returnPropVal("config", "booking") + "/" + bookingId);
-        extentLog.log(Status.INFO, customReport("Click here to the View the Request", requestWriter.toString()));
-        extentLog.log(Status.INFO, customReport("HITS Endpoint to verify booking is deleted or not-- click to see the Response ",
+        extentLog.log(Status.INFO, customReport("Click here to the view the Request", requestWriter.toString()));
+        extentLog.log(Status.INFO, customReport("Click here to the view the Response",
                 response.asString()));
         checkErrorResponse(response, HttpStatus.SC_NOT_FOUND);
     }

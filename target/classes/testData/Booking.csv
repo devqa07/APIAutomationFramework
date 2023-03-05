@@ -1,8 +1,8 @@
-bookingId,2
-firstName,Dev
+bookingId,1
+firstName,Dev,Deven,Devendra
 lastName,B
-totalPrice,110
+totalPrice,110,200
 depositPaid,true
 additionalNeeds,Breakfast
-checkin,2023-01-01
-checkout,2023-01-05
+userName,admin
+password,password123

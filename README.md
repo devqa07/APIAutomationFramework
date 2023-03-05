@@ -1,38 +1,55 @@
-Rest-API Automation framework:
+**Rest-API Automation Framework:**
 
 Install Maven and Import as Maven project in IntelliJ or Eclipse
 
-Framework Structure:
+**Framework Structure:**
 
-base:
+**base**:It consists of all the reusable methods which common and reusable throughout the framework
 
-db:
+**db**:It consists of db queries and setting and getting the data from the pojo class
 
-pojo:
+**pojo**:It consists of db attributes/columns which needs to be validated in db wrt to the response
 
-requestBuilder:
+**requestBuilder**:It consists of the requestBuilder(RequestBody) methods
 
-responseParser
+**responseParser**:It consists of the response validation methods
 
-utils:
+**utils**: It consists of all the utilities which are common and reusable throughout the framework
 
-resources: 
+**resources**: 
 
-config.properties - all service urls , db connections and usernames
+**config.properties** - It contains all the service urls/endpoints , db connections and usernames
 
-testData:This consists of all the .csv files test data
+**testData**:It consists of all the testData(.csv) files
 
-test: All Success and Error test cases
+**test**: All Success and Error test cases
+
+**testng.xml**: It contains all the tests/packages to be run in the suite
+
+**Note**:
+
+Java version 11 is used for implementing this framework
+
+Java Faker library is used to Generate fake test data for testing
+
+TestNG is framework is used for test Assertions
+
+Lombok library has been used to generate Getter and Setters automatically
+
+Maven is used as build tool for this framework
 
 How to run test cases:
 
-Eclipse/IntelliJ -Right click to any test class
+*Right click on testng.xml to execute the complete suite
 
-CMD Line :
+*Eclipse/IntelliJ -Right click to any test class and run
 
-mvn clean test -Denvironment=${environment} -DsuiteXmlFile=${suiteXmlFile} 
--Dtestng.dtd.http=true -DdbPwd=${dbPwd} 
+**Running from CMD Line :**
 
-Example: mvn clean test -Denvironment=qa -DsuiteXmlFile=testNG.xml -Dtestng.dtd.http=true -DdbPwd=qa-db-pwd
+1.Navigate to framework/project path and use the below command
 
-Reports Generation(REST-API-AutomationReport.html)
+2.mvn clean test 
+
+**test-output:**
+
+Execution Reports(open REST-API-AutomationReport.html in a browser to see the detailed report)

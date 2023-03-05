@@ -1,2 +1,2 @@
-com/rest/api/automation/bookings/CreateBookingSuccessScenariosTest.class
-com/rest/api/automation/bookings/GetBookingDetailsSuccessScenariosTest.class
+com/rest/api/automation/bookings/RestfulBookerErrorsTest.class
+com/rest/api/automation/bookings/RestfulBookerE2EFlowSuccessTest.class

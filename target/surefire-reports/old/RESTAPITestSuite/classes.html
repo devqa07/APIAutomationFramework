@@ -4,7 +4,7 @@
 <th>Method name</th>
 <th>Groups</th>
 </tr><tr>
-<td>com.rest.api.automation.bookings.GetBookingDetailsSuccessScenariosTest</td>
+<td>com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@Test</td>
@@ -14,15 +14,31 @@
 <td>verifyGetBookingDetails</td>
 <td>&nbsp;</td></tr>
 <tr>
+<td>&nbsp;</td>
+<td>verifyDeleteBooking</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyCreateBooking</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyUpdateBooking</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyPartialUpdateBooking</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyBookingIsDeleted</td>
+<td>&nbsp;</td></tr>
+<tr>
 <td align='center' colspan='3'>@BeforeClass</td>
 </tr>
 <tr>
 <td align='center' colspan='3'>@BeforeMethod</td>
 </tr>
-<tr>
-<td>&nbsp;</td>
-<td>clearQueryParamAndHeaders</td>
-<td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
 <td>getMethodName</td>
@@ -38,14 +54,26 @@
 <td align='center' colspan='3'>@AfterClass</td>
 </tr>
 <tr>
-<td>com.rest.api.automation.bookings.CreateBookingSuccessScenariosTest</td>
+<td>com.rest.api.automation.bookings.RestfulBookerErrorsTest</td>
 <td>&nbsp;</td><td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@Test</td>
 </tr>
 <tr>
 <td>&nbsp;</td>
-<td>verifyCreateBooking</td>
+<td>verifyCreateBookingWithInvalidMethod</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyGetBookingDetailsWithInvalidMethod</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyUpdateBookingWithInvalidMethod</td>
+<td>&nbsp;</td></tr>
+<tr>
+<td>&nbsp;</td>
+<td>verifyDeleteBookingWithInvalidMethod</td>
 <td>&nbsp;</td></tr>
 <tr>
 <td align='center' colspan='3'>@BeforeClass</td>
@@ -53,10 +81,6 @@
 <tr>
 <td align='center' colspan='3'>@BeforeMethod</td>
 </tr>
-<tr>
-<td>&nbsp;</td>
-<td>clearQueryParamAndHeaders</td>
-<td>&nbsp;</td></tr>
 <tr>
 <td>&nbsp;</td>
 <td>getMethodName</td>

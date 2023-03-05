@@ -32,4 +32,23 @@ public class BookingsBaseTest {
         Assert.assertNotNull(json.getJSONObject("bookingdates").getString("checkin"));
         Assert.assertNotNull(json.getJSONObject("bookingdates").getString("checkout"));
     }
+
+    // Validate Update Booking Response
+    public void validateUpdateBookingResponse(Response response, String firstName) {
+        json = new JSONObject(response.asString());
+        Assert.assertEquals(json.getString("firstname"), firstName);
+        Assert.assertNotNull(json.getString("lastname"));
+        Assert.assertNotNull(json.getInt("totalprice"));
+        Assert.assertNotNull(json.getBoolean("depositpaid"));
+        Assert.assertNotNull(json.getJSONObject("bookingdates").getString("checkin"));
+        Assert.assertNotNull(json.getJSONObject("bookingdates").getString("checkout"));
+        Assert.assertNotNull(json.getString("additionalneeds"));
+    }
+
+    // Validate Partial Update Booking Response
+    public void validatePartialUpdateBookingResponse(Response response, String firstName,String totalPrice ) {
+        json = new JSONObject(response.asString());
+        Assert.assertEquals(json.getString("firstname"), firstName);
+        Assert.assertEquals(json.getInt("totalprice"),Integer.parseInt(totalPrice));
+    }
 }

@@ -47,7 +47,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Mar 3, 2023 09:21:53 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Mar 6, 2023 12:53:33 AM</span>
 				</a>
 			</li>
 			<li>
@@ -133,15 +133,15 @@
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>CreateBookingSuccessScenariosTest : verifyCreateBooking</span>
-						<span class='test-time'>Mar 3, 2023 09:21:53 AM</span>
+						<span class='test-name'>RestfulBookerE2EFlowSuccessTest : verifyCreateBooking</span>
+						<span class='test-time'>Mar 6, 2023 12:53:33 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 3, 2023 09:21:53 AM</span>
-	<span class='label end-time'>Mar 3, 2023 09:21:55 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+517ms</span>
+	<span class='label start-time'>Mar 6, 2023 12:53:33 AM</span>
+	<span class='label end-time'>Mar 6, 2023 12:53:35 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+379ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -160,21 +160,21 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:21:53 AM</td>
+					<td class='timestamp'>12:53:33 AM</td>
 					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>verifyCreateBooking: This test Creates a new booking</b><pre style='display:none'></pre></td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:21:55 AM</td>
-					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the View the Request</b><pre style='display:none'>Request method:	POST
-Request URI:	https://restful-booker.herokuapp.com/booking/
+					<td class='timestamp'>12:53:35 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the view the Request</b><pre style='display:none'>Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
+				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
@@ -182,8 +182,8 @@ Body:
     "firstname": "Dev",
     "additionalneeds": "Breakfast",
     "bookingdates": {
-        "checkin": "2023-01-01",
-        "checkout": "2023-01-05"
+        "checkin": "2023-02-18",
+        "checkout": "2023-03-09"
     },
     "totalprice": 110,
     "depositpaid": true,
@@ -193,25 +193,12 @@ Body:
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:21:55 AM</td>
-					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>HITS Endpoint to verify create a new booking-- click to see the Response </b><pre style='display:none'>{
-    "bookingid": 7230,
-    "booking": {
-        "firstname": "Dev",
-        "lastname": "B",
-        "totalprice": 110,
-        "depositpaid": true,
-        "bookingdates": {
-            "checkin": "2023-01-01",
-            "checkout": "2023-01-05"
-        },
-        "additionalneeds": "Breakfast"
-    }
-}</pre></td>
+					<td class='timestamp'>12:53:35 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the view the Response</b><pre style='display:none'>{"bookingid":11538,"booking":{"firstname":"Dev","lastname":"B","totalprice":110,"depositpaid":true,"bookingdates":{"checkin":"2023-02-18","checkout":"2023-03-09"},"additionalneeds":"Breakfast"}}</pre></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:21:55 AM</td>
+					<td class='timestamp'>12:53:35 AM</td>
 					<td class='step-details'><span class='label white-text green'>verifyCreateBooking - Test Case Passed</span></td>
 				</tr>
 			</tbody>
@@ -223,15 +210,15 @@ Body:
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>DeleteBookingErrorScenariosTest : verifyDeleteBookingWithInvalidMethod</span>
-						<span class='test-time'>Mar 3, 2023 09:21:55 AM</span>
+						<span class='test-name'>RestfulBookerE2EFlowSuccessTest : verifyGetBookingDetails</span>
+						<span class='test-time'>Mar 6, 2023 12:53:35 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 3, 2023 09:21:55 AM</span>
-	<span class='label end-time'>Mar 3, 2023 09:21:57 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+492ms</span>
+	<span class='label start-time'>Mar 6, 2023 12:53:35 AM</span>
+	<span class='label end-time'>Mar 6, 2023 12:53:36 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+71ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -250,21 +237,21 @@ Body:
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:21:55 AM</td>
-					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>verifyDeleteBookingWithInvalidMethod: This test verifies delete booking error response with invalid RequestMethod</b><pre style='display:none'></pre></td>
+					<td class='timestamp'>12:53:35 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>verifyGetBookingDetails: This test verifies Get Booking Details </b><pre style='display:none'></pre></td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:21:57 AM</td>
-					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the View the Request</b><pre style='display:none'>Request method:	DELETE
-Request URI:	https://restful-booker.herokuapp.com/booking/2
+					<td class='timestamp'>12:53:36 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the view the Request</b><pre style='display:none'>Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/11538
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
+				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
@@ -272,13 +259,13 @@ Body:			<none>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:21:57 AM</td>
-					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>HITS Endpoint to verify delete booking error response with invalid RequestMethod-- click to see the Response </b><pre style='display:none'>Forbidden</pre></td>
+					<td class='timestamp'>12:53:36 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the view the Response</b><pre style='display:none'>{"firstname":"Dev","lastname":"B","totalprice":110,"depositpaid":true,"bookingdates":{"checkin":"2023-02-18","checkout":"2023-03-09"},"additionalneeds":"Breakfast"}</pre></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:21:57 AM</td>
-					<td class='step-details'><span class='label white-text green'>verifyDeleteBookingWithInvalidMethod - Test Case Passed</span></td>
+					<td class='timestamp'>12:53:36 AM</td>
+					<td class='step-details'><span class='label white-text green'>verifyGetBookingDetails - Test Case Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -289,15 +276,15 @@ Body:			<none>
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
 					<div class='test-heading'>
-						<span class='test-name'>GetBookingDetailsSuccessScenariosTest : verifyGetBookingDetails</span>
-						<span class='test-time'>Mar 3, 2023 09:21:57 AM</span>
+						<span class='test-name'>RestfulBookerE2EFlowSuccessTest : verifyUpdateBooking</span>
+						<span class='test-time'>Mar 6, 2023 12:53:36 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 3, 2023 09:21:57 AM</span>
-	<span class='label end-time'>Mar 3, 2023 09:21:58 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+20ms</span>
+	<span class='label start-time'>Mar 6, 2023 12:53:36 AM</span>
+	<span class='label end-time'>Mar 6, 2023 12:53:39 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+80ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -316,44 +303,63 @@ Body:			<none>
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:21:57 AM</td>
-					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>verifyGetBookingDetails: This test verifies Get Booking Details </b><pre style='display:none'></pre></td>
+					<td class='timestamp'>12:53:36 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>verifyUpdateBooking: This test updates booking details</b><pre style='display:none'></pre></td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:21:58 AM</td>
-					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the View the Request</b><pre style='display:none'>Request method:	GET
-Request URI:	https://restful-booker.herokuapp.com/booking/2
+					<td class='timestamp'>12:53:39 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the view the Request</b><pre style='display:none'>Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/auth
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
+				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
-Body:			<none>
+Body:
+{
+    "password": "password123",
+    "username": "admin"
+}
+Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking/11538
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=dfde45e4f54d6de
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Deven",
+    "additionalneeds": "Breakfast",
+    "bookingdates": {
+        "checkin": "2023-02-18",
+        "checkout": "2023-03-09"
+    },
+    "totalprice": 110,
+    "depositpaid": true,
+    "lastname": "B"
+}
 </pre></td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:21:58 AM</td>
-					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>HITS Endpoint to verify Get Booking Details -- click to see the Response </b><pre style='display:none'>{
-    "firstname": "Mary",
-    "lastname": "Ericsson",
-    "totalprice": 805,
-    "depositpaid": false,
-    "bookingdates": {
-        "checkin": "2019-02-09",
-        "checkout": "2022-01-23"
-    }
-}</pre></td>
+					<td class='timestamp'>12:53:39 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the view the Response</b><pre style='display:none'>{"firstname":"Deven","lastname":"B","totalprice":110,"depositpaid":true,"bookingdates":{"checkin":"2023-02-18","checkout":"2023-03-09"},"additionalneeds":"Breakfast"}</pre></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:21:58 AM</td>
-					<td class='step-details'><span class='label white-text green'>verifyGetBookingDetails - Test Case Passed</span></td>
+					<td class='timestamp'>12:53:39 AM</td>
+					<td class='step-details'><span class='label white-text green'>verifyUpdateBooking - Test Case Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -364,15 +370,15 @@ Body:			<none>
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
-						<span class='test-name'>GetBookingDetailsErrorScenariosTest : verifyGetBookingDetailsWithInvalidMethod</span>
-						<span class='test-time'>Mar 3, 2023 09:21:58 AM</span>
+						<span class='test-name'>RestfulBookerE2EFlowSuccessTest : verifyPartialUpdateBooking</span>
+						<span class='test-time'>Mar 6, 2023 12:53:39 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 3, 2023 09:21:58 AM</span>
-	<span class='label end-time'>Mar 3, 2023 09:21:59 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+9ms</span>
+	<span class='label start-time'>Mar 6, 2023 12:53:39 AM</span>
+	<span class='label end-time'>Mar 6, 2023 12:53:41 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+71ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -391,35 +397,56 @@ Body:			<none>
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:21:58 AM</td>
-					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>verifyGetBookingDetailsWithInvalidMethod: This test verifies Get Booking Details Error Response With Invalid Method </b><pre style='display:none'></pre></td>
+					<td class='timestamp'>12:53:39 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>verifyPartialUpdateBooking: This test updates booking details</b><pre style='display:none'></pre></td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:21:59 AM</td>
-					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the View the Request</b><pre style='display:none'>Request method:	DELETE
-Request URI:	https://restful-booker.herokuapp.com/booking/2
+					<td class='timestamp'>12:53:41 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the view the Request</b><pre style='display:none'>Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/auth
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
+				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
-Body:			<none>
+Body:
+{
+    "password": "password123",
+    "username": "admin"
+}
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/11538
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=d65408dbb03cee2
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Devendra",
+    "totalprice": 200
+}
 </pre></td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:21:59 AM</td>
-					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>HITS Endpoint to verify Booking Details Error Response With Invalid Method -- click to see the Response </b><pre style='display:none'>Forbidden</pre></td>
+					<td class='timestamp'>12:53:41 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the view the Response</b><pre style='display:none'>{"firstname":"Devendra","lastname":"B","totalprice":200,"depositpaid":true,"bookingdates":{"checkin":"2023-02-18","checkout":"2023-03-09"},"additionalneeds":"Breakfast"}</pre></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:21:59 AM</td>
-					<td class='step-details'><span class='label white-text green'>verifyGetBookingDetailsWithInvalidMethod - Test Case Passed</span></td>
+					<td class='timestamp'>12:53:41 AM</td>
+					<td class='step-details'><span class='label white-text green'>verifyPartialUpdateBooking - Test Case Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -430,15 +457,15 @@ Body:			<none>
 				
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
-						<span class='test-name'>CreateBookingErrorScenariosTest : verifyCreateBookingWithInvalidMethod</span>
-						<span class='test-time'>Mar 3, 2023 09:21:59 AM</span>
+						<span class='test-name'>RestfulBookerE2EFlowSuccessTest : verifyDeleteBooking</span>
+						<span class='test-time'>Mar 6, 2023 12:53:41 AM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar 3, 2023 09:21:59 AM</span>
-	<span class='label end-time'>Mar 3, 2023 09:22:00 AM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+9ms</span>
+	<span class='label start-time'>Mar 6, 2023 12:53:41 AM</span>
+	<span class='label end-time'>Mar 6, 2023 12:53:43 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+343ms</span>
 </div>
 	<div class='test-attributes'>
 			<div class='category-list'>
@@ -457,46 +484,405 @@ Body:			<none>
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:21:59 AM</td>
-					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>verifyCreateBookingWithInvalidMethod: This test verifies Create Booking error response with invalid ReqMethod</b><pre style='display:none'></pre></td>
+					<td class='timestamp'>12:53:41 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>verifyDeleteBooking: This test verifies delete booking</b><pre style='display:none'></pre></td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:22:00 AM</td>
-					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the View the Request</b><pre style='display:none'>Request method:	PUT
-Request URI:	https://restful-booker.herokuapp.com/booking/
+					<td class='timestamp'>12:53:43 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the view the Request</b><pre style='display:none'>Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/auth
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
+				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "firstname": "Dev",
+    "password": "password123",
+    "username": "admin"
+}
+Request method:	DELETE
+Request URI:	https://restful-booker.herokuapp.com/booking/11538
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=f8e83e2d4447bd5
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+</pre></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:53:43 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the view the Response</b><pre style='display:none'>Created</pre></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:53:43 AM</td>
+					<td class='step-details'><span class='label white-text green'>verifyDeleteBooking - Test Case Passed</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>RestfulBookerE2EFlowSuccessTest : verifyBookingIsDeleted</span>
+						<span class='test-time'>Mar 6, 2023 12:53:43 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 6, 2023 12:53:43 AM</span>
+	<span class='label end-time'>Mar 6, 2023 12:53:44 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+330ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>bookings</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:53:43 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>verifyBookingIsDeleted: This test verifies booking is deleted or not</b><pre style='display:none'></pre></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:53:44 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the view the Request</b><pre style='display:none'>Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/11538
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+</pre></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:53:44 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the view the Response</b><pre style='display:none'>Not Found</pre></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:53:44 AM</td>
+					<td class='step-details'><span class='label white-text green'>verifyBookingIsDeleted - Test Case Passed</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>RestfulBookerErrorsTest : verifyCreateBookingWithInvalidMethod</span>
+						<span class='test-time'>Mar 6, 2023 12:53:44 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 6, 2023 12:53:44 AM</span>
+	<span class='label end-time'>Mar 6, 2023 12:53:45 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+226ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>bookings</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:53:44 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>verifyCreateBookingWithInvalidMethod: This test verifies Create Booking error response with invalid ReqMethod</b><pre style='display:none'></pre></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:53:45 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the view the Request</b><pre style='display:none'>Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Chrystal",
     "additionalneeds": "Breakfast",
     "bookingdates": {
-        "checkin": "2023-01-01",
-        "checkout": "2023-01-05"
+        "checkin": "2023-02-26",
+        "checkout": "2023-03-07"
     },
-    "totalprice": 110,
+    "totalprice": 100,
     "depositpaid": true,
-    "lastname": "B"
+    "lastname": "Funk"
 }
 </pre></td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:22:00 AM</td>
-					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>HITS Endpoint to verify Create Booking error response with invalid ReqMethod-- click to see the Response </b><pre style='display:none'>Not Found</pre></td>
+					<td class='timestamp'>12:53:45 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the view the Response</b><pre style='display:none'>Not Found</pre></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:22:00 AM</td>
+					<td class='timestamp'>12:53:45 AM</td>
 					<td class='step-details'><span class='label white-text green'>verifyCreateBookingWithInvalidMethod - Test Case Passed</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>RestfulBookerErrorsTest : verifyDeleteBookingWithInvalidMethod</span>
+						<span class='test-time'>Mar 6, 2023 12:53:45 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 6, 2023 12:53:45 AM</span>
+	<span class='label end-time'>Mar 6, 2023 12:53:47 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+125ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>bookings</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:53:45 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>verifyDeleteBookingWithInvalidMethod: This test verifies delete booking With Invalid Method</b><pre style='display:none'></pre></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:53:47 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the view the Request</b><pre style='display:none'>Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+</pre></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:53:47 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the view the Response</b><pre style='display:none'>Forbidden</pre></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:53:47 AM</td>
+					<td class='step-details'><span class='label white-text green'>verifyDeleteBookingWithInvalidMethod - Test Case Passed</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>RestfulBookerErrorsTest : verifyGetBookingDetailsWithInvalidMethod</span>
+						<span class='test-time'>Mar 6, 2023 12:53:47 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 6, 2023 12:53:47 AM</span>
+	<span class='label end-time'>Mar 6, 2023 12:53:48 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+6ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>bookings</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:53:47 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>verifyGetBookingDetailsWithInvalidMethod: This test verifies Get Booking Details Error Response With Invalid Method </b><pre style='display:none'></pre></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:53:48 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the view the Request</b><pre style='display:none'>Request method:	DELETE
+Request URI:	https://restful-booker.herokuapp.com/booking/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+</pre></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:53:48 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the view the Response</b><pre style='display:none'>Forbidden</pre></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:53:48 AM</td>
+					<td class='step-details'><span class='label white-text green'>verifyGetBookingDetailsWithInvalidMethod - Test Case Passed</span></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>RestfulBookerErrorsTest : verifyUpdateBookingWithInvalidMethod</span>
+						<span class='test-time'>Mar 6, 2023 12:53:48 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar 6, 2023 12:53:48 AM</span>
+	<span class='label end-time'>Mar 6, 2023 12:53:49 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+449ms</span>
+</div>
+	<div class='test-attributes'>
+			<div class='category-list'>
+				<span class='category label white-text'>bookings</span>
+			</div>
+	</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:53:48 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>verifyUpdateBookingWithInvalidMethod: This test updates booking details With Invalid Method</b><pre style='display:none'></pre></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:53:49 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the view the Request</b><pre style='display:none'>Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=token=abc+y35647
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Deven",
+    "additionalneeds": "Breakfast",
+    "bookingdates": {
+        "checkin": "2023-02-26",
+        "checkout": "2023-03-07"
+    },
+    "totalprice": 100,
+    "depositpaid": true,
+    "lastname": "Funk"
+}
+</pre></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>12:53:49 AM</td>
+					<td class='step-details'><b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(".exception").click(function(){ $(this).next().toggle()}))'>Click here to the view the Response</b><pre style='display:none'>Forbidden</pre></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>12:53:49 AM</td>
+					<td class='step-details'><span class='label white-text green'>verifyUpdateBookingWithInvalidMethod - Test Case Passed</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -536,7 +922,7 @@ Body:
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>5</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>10</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -551,10 +937,10 @@ Body:
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='25%'><span class='strong'>5</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='25%'><span class='strong'>10</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='75%'>15</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='75%'>30</span> others
 				</div>
 			</div>
 		</div>
@@ -592,12 +978,12 @@ Body:
 					<div class='category-heading'>
 						<span class='category-name'>bookings</span>
 						<span class='category-status right'>
-							<span class='label pass'>5</span>
+							<span class='label pass'>10</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 5</span>
+							<span class='label green accent-4 white-text'>Passed: 10</span>
 							
 							
 						</div>
@@ -613,28 +999,53 @@ Body:
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 3, 2023 09:21:53 AM</td>
-										<td class='linked' test-id='1'>CreateBookingSuccessScenariosTest : verifyCreateBooking</td>
+										<td>Mar 6, 2023 12:53:33 AM</td>
+										<td class='linked' test-id='1'>RestfulBookerE2EFlowSuccessTest : verifyCreateBooking</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Mar 3, 2023 09:21:55 AM</td>
-										<td class='linked' test-id='2'>DeleteBookingErrorScenariosTest : verifyDeleteBookingWithInvalidMethod</td>
+										<td>Mar 6, 2023 12:53:35 AM</td>
+										<td class='linked' test-id='2'>RestfulBookerE2EFlowSuccessTest : verifyGetBookingDetails</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Mar 3, 2023 09:21:57 AM</td>
-										<td class='linked' test-id='3'>GetBookingDetailsSuccessScenariosTest : verifyGetBookingDetails</td>
+										<td>Mar 6, 2023 12:53:36 AM</td>
+										<td class='linked' test-id='3'>RestfulBookerE2EFlowSuccessTest : verifyUpdateBooking</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Mar 3, 2023 09:21:58 AM</td>
-										<td class='linked' test-id='4'>GetBookingDetailsErrorScenariosTest : verifyGetBookingDetailsWithInvalidMethod</td>
+										<td>Mar 6, 2023 12:53:39 AM</td>
+										<td class='linked' test-id='4'>RestfulBookerE2EFlowSuccessTest : verifyPartialUpdateBooking</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Mar 3, 2023 09:21:59 AM</td>
-										<td class='linked' test-id='5'>CreateBookingErrorScenariosTest : verifyCreateBookingWithInvalidMethod</td>
+										<td>Mar 6, 2023 12:53:41 AM</td>
+										<td class='linked' test-id='5'>RestfulBookerE2EFlowSuccessTest : verifyDeleteBooking</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 6, 2023 12:53:43 AM</td>
+										<td class='linked' test-id='6'>RestfulBookerE2EFlowSuccessTest : verifyBookingIsDeleted</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 6, 2023 12:53:44 AM</td>
+										<td class='linked' test-id='7'>RestfulBookerErrorsTest : verifyCreateBookingWithInvalidMethod</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 6, 2023 12:53:45 AM</td>
+										<td class='linked' test-id='8'>RestfulBookerErrorsTest : verifyDeleteBookingWithInvalidMethod</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 6, 2023 12:53:47 AM</td>
+										<td class='linked' test-id='9'>RestfulBookerErrorsTest : verifyGetBookingDetailsWithInvalidMethod</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 6, 2023 12:53:48 AM</td>
+										<td class='linked' test-id='10'>RestfulBookerErrorsTest : verifyUpdateBookingWithInvalidMethod</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -663,31 +1074,31 @@ Body:
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>5</div>
+					<div class='panel-lead'>10</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>20</div>
+					<div class='panel-lead'>40</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar 3, 2023 09:21:53 AM</div>
+					<div class='panel-lead'>Mar 6, 2023 12:53:33 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar 3, 2023 09:22:00 AM</div>
+			 		<div class='panel-lead'>Mar 6, 2023 12:53:49 AM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 7s+156ms</div>
+					<div class='panel-lead'>0h 0m 16s+189ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -720,7 +1131,7 @@ Body:
 						</tr>
 						<tr>
 							<td>bookings</td>
-							<td>5</td>
+							<td>10</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -740,7 +1151,7 @@ Body:
 
 		<script>
 			var statusGroup = {
-				passParent: 5,
+				passParent: 10,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
@@ -748,13 +1159,13 @@ Body:
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 5,
+				passChild: 10,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
-				infoChild: 15,
+				infoChild: 30,
 				exceptionsChild: 0,
 				
 				passGrandChild: 0,

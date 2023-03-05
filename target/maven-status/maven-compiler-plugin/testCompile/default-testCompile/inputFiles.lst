@@ -1,4 +1,2 @@
-/Users/dev/Desktop/Dev/Ankita/DevHyke/APIAutomationFramework/src/test/java/com/rest/api/automation/bookings/CreateBookingSuccessScenariosTest.java
-/Users/dev/Desktop/Dev/Ankita/DevHyke/APIAutomationFramework/src/test/java/com/rest/api/automation/bookings/GetBookingDetailsErrorScenariosTest.java
-/Users/dev/Desktop/Dev/Ankita/DevHyke/APIAutomationFramework/src/test/java/com/rest/api/automation/bookings/GetBookingDetailsSuccessScenariosTest.java
-/Users/dev/Desktop/Dev/Ankita/DevHyke/APIAutomationFramework/src/test/java/com/rest/api/automation/bookings/CreateCollectionErrorScenariosTest.java
+/Users/dev/Desktop/Dev/Ankita/DevHyke/APIAutomationFramework/src/test/java/com/rest/api/automation/bookings/RestfulBookerErrorsTest.java
+/Users/dev/Desktop/Dev/Ankita/DevHyke/APIAutomationFramework/src/test/java/com/rest/api/automation/bookings/RestfulBookerE2EFlowSuccessTest.java

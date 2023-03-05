@@ -18,19 +18,18 @@ public class RestAPIUtils {
         }
         switch (env.toLowerCase()) {
             case "qa":
-            case "test":
-                url = ConfigHelper.GetBaseUrl("testUrl");
+                url = ConfigHelper.GetBaseUrl("qaUrl");
                 break;
             case "dev":
                 url = ConfigHelper.GetBaseUrl("devUrl");
                 break;
             default:
-                System.out.println("Invalid case");
+                System.out.println("Invalid Environment Value");
         }
         return url;
     }
 
-    // Get DbEnvDetails
+    // Get Db Environment Details
     public static String getDbEnvDetails() {
         String dbEnv = null;
         if (System.getProperty("environment") != null) {
@@ -59,7 +58,7 @@ public class RestAPIUtils {
                 || environment.equalsIgnoreCase(TestConstants.ENV_DEV)) {
             return db_Name;
         }
-        return "Inappropriate or null DB name";
+        return "Invalid or null DB name";
     }
 
     /**
@@ -83,12 +82,20 @@ public class RestAPIUtils {
      * anyNumber, the method will handle all keys and returns the required
      * attributes from response
      */
-    public static LinkedHashMap<String, String> getSpecificJsonAttribute(Response response, String[] key) { //specific data from response
+    public static LinkedHashMap<String, String> getSpecificStringJsonAttribute(Response response, String[] key) { //specific data from response
         LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
         JSONObject json = new JSONObject(response.asString());
-        JSONObject data = json.getJSONObject("data");
         for (int i = 0; i < key.length; i++) {
-            map.put(key[i], data.getString(key[i]));
+            map.put(key[i], json.getString(key[i]));
+        }
+        return map;
+    }
+
+    public static LinkedHashMap<String, Integer> getSpecificIntegerJsonAttribute(Response response, String[] key) {
+        LinkedHashMap<String, Integer> map = new LinkedHashMap<String, Integer>();
+        JSONObject json = new JSONObject(response.asString());
+        for (int i = 0; i < key.length; i++) {
+            map.put(key[i], json.getInt(key[i]));
         }
         return map;
     }

@@ -1,90 +1,290 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
+<testng-results ignored="2" total="12" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-25T15:42:13 GST" name="RESTAPITestSuite" finished-at="2023-02-25T15:42:17 GST" duration-ms="3867">
+  <suite started-at="2023-03-06T00:17:23 GST" name="RESTAPITestSuite" finished-at="2023-03-06T00:17:39 GST" duration-ms="15962">
     <groups>
     </groups>
-    <test started-at="2023-02-25T15:42:13 GST" name="AutomationTestSuite" finished-at="2023-02-25T15:42:17 GST" duration-ms="3867">
-      <class name="com.rest.api.automation.bookings.GetBookingDetailsSuccessScenariosTest">
-        <test-method is-config="true" signature="getMethodName(java.lang.reflect.Method)[pri:0, instance:com.rest.api.automation.bookings.GetBookingDetailsSuccessScenariosTest@5213b887]" started-at="2023-02-25T15:42:16 GST" name="getMethodName" finished-at="2023-02-25T15:42:16 GST" duration-ms="0" status="PASS">
+    <test started-at="2023-03-06T00:17:23 GST" name="AutomationTestSuite" finished-at="2023-03-06T00:17:39 GST" duration-ms="15962">
+      <class name="com.rest.api.automation.bookings.RestfulBookerErrorsTest">
+        <test-method is-config="true" signature="getMethodName(java.lang.reflect.Method)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerErrorsTest@4fe8e318]" started-at="2023-03-06T00:17:34 GST" name="getMethodName" finished-at="2023-03-06T00:17:34 GST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.rest.api.automation.bookings.GetBookingDetailsSuccessScenariosTest.verifyGetBookingDetails()]]>
+                <![CDATA[public void com.rest.api.automation.bookings.RestfulBookerErrorsTest.verifyCreateBookingWithInvalidMethod()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getMethodName -->
-        <test-method signature="verifyGetBookingDetails()[pri:0, instance:com.rest.api.automation.bookings.GetBookingDetailsSuccessScenariosTest@5213b887]" started-at="2023-02-25T15:42:16 GST" name="verifyGetBookingDetails" finished-at="2023-02-25T15:42:17 GST" duration-ms="1384" status="PASS">
+        <test-method signature="verifyCreateBookingWithInvalidMethod()[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerErrorsTest@4fe8e318]" started-at="2023-03-06T00:17:34 GST" name="verifyCreateBookingWithInvalidMethod" finished-at="2023-03-06T00:17:35 GST" duration-ms="1431" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyGetBookingDetails -->
-        <test-method is-config="true" signature="clearQueryParamAndHeaders()[pri:0, instance:com.rest.api.automation.bookings.GetBookingDetailsSuccessScenariosTest@5213b887]" started-at="2023-02-25T15:42:16 GST" name="clearQueryParamAndHeaders" finished-at="2023-02-25T15:42:16 GST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearQueryParamAndHeaders -->
-        <test-method is-config="true" signature="reportsUpdate(org.testng.ITestResult)[pri:0, instance:com.rest.api.automation.bookings.GetBookingDetailsSuccessScenariosTest@5213b887]" started-at="2023-02-25T15:42:17 GST" name="reportsUpdate" finished-at="2023-02-25T15:42:17 GST" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyCreateBookingWithInvalidMethod -->
+        <test-method is-config="true" signature="getMethodName(java.lang.reflect.Method)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerErrorsTest@4fe8e318]" started-at="2023-03-06T00:17:35 GST" name="getMethodName" finished-at="2023-03-06T00:17:35 GST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyGetBookingDetails status=SUCCESS method=GetBookingDetailsSuccessScenariosTest.verifyGetBookingDetails()[pri:0, instance:com.rest.api.automation.bookings.GetBookingDetailsSuccessScenariosTest@5213b887] output={null}]]]>
+                <![CDATA[public void com.rest.api.automation.bookings.RestfulBookerErrorsTest.verifyDeleteBookingWithInvalidMethod()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMethodName -->
+        <test-method is-config="true" signature="reportsUpdate(org.testng.ITestResult)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerErrorsTest@4fe8e318]" started-at="2023-03-06T00:17:35 GST" name="reportsUpdate" finished-at="2023-03-06T00:17:35 GST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCreateBookingWithInvalidMethod status=SUCCESS method=RestfulBookerErrorsTest.verifyCreateBookingWithInvalidMethod()[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerErrorsTest@4fe8e318] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportsUpdate -->
-      </class> <!-- com.rest.api.automation.bookings.GetBookingDetailsSuccessScenariosTest -->
-      <class name="com.rest.api.automation.bookings.CreateBookingSuccessScenariosTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rest.api.automation.bookings.CreateBookingSuccessScenariosTest@1f3aa970]" started-at="2023-02-25T15:42:13 GST" name="setUp" finished-at="2023-02-25T15:42:13 GST" duration-ms="85" status="PASS">
+        <test-method signature="verifyDeleteBookingWithInvalidMethod()[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerErrorsTest@4fe8e318]" started-at="2023-03-06T00:17:35 GST" name="verifyDeleteBookingWithInvalidMethod" finished-at="2023-03-06T00:17:36 GST" duration-ms="1125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteBookingWithInvalidMethod -->
+        <test-method is-config="true" signature="reportsUpdate(org.testng.ITestResult)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerErrorsTest@4fe8e318]" started-at="2023-03-06T00:17:36 GST" name="reportsUpdate" finished-at="2023-03-06T00:17:36 GST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDeleteBookingWithInvalidMethod status=SUCCESS method=RestfulBookerErrorsTest.verifyDeleteBookingWithInvalidMethod()[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerErrorsTest@4fe8e318] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportsUpdate -->
+        <test-method is-config="true" signature="getMethodName(java.lang.reflect.Method)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerErrorsTest@4fe8e318]" started-at="2023-03-06T00:17:36 GST" name="getMethodName" finished-at="2023-03-06T00:17:36 GST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rest.api.automation.bookings.RestfulBookerErrorsTest.verifyGetBookingDetailsWithInvalidMethod()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMethodName -->
+        <test-method signature="verifyGetBookingDetailsWithInvalidMethod()[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerErrorsTest@4fe8e318]" started-at="2023-03-06T00:17:36 GST" name="verifyGetBookingDetailsWithInvalidMethod" finished-at="2023-03-06T00:17:38 GST" duration-ms="1228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetBookingDetailsWithInvalidMethod -->
+        <test-method is-config="true" signature="reportsUpdate(org.testng.ITestResult)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerErrorsTest@4fe8e318]" started-at="2023-03-06T00:17:38 GST" name="reportsUpdate" finished-at="2023-03-06T00:17:38 GST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyGetBookingDetailsWithInvalidMethod status=SUCCESS method=RestfulBookerErrorsTest.verifyGetBookingDetailsWithInvalidMethod()[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerErrorsTest@4fe8e318] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportsUpdate -->
+        <test-method signature="verifyUpdateBookingWithInvalidMethod()[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerErrorsTest@4fe8e318]" started-at="2023-03-06T00:17:38 GST" name="verifyUpdateBookingWithInvalidMethod" finished-at="2023-03-06T00:17:39 GST" duration-ms="1254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateBookingWithInvalidMethod -->
+        <test-method is-config="true" signature="getMethodName(java.lang.reflect.Method)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerErrorsTest@4fe8e318]" started-at="2023-03-06T00:17:38 GST" name="getMethodName" finished-at="2023-03-06T00:17:38 GST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rest.api.automation.bookings.RestfulBookerErrorsTest.verifyUpdateBookingWithInvalidMethod()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMethodName -->
+        <test-method is-config="true" signature="reportsUpdate(org.testng.ITestResult)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerErrorsTest@4fe8e318]" started-at="2023-03-06T00:17:39 GST" name="reportsUpdate" finished-at="2023-03-06T00:17:39 GST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUpdateBookingWithInvalidMethod status=SUCCESS method=RestfulBookerErrorsTest.verifyUpdateBookingWithInvalidMethod()[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerErrorsTest@4fe8e318] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportsUpdate -->
+      </class> <!-- com.rest.api.automation.bookings.RestfulBookerErrorsTest -->
+      <class name="com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2]" started-at="2023-03-06T00:17:23 GST" name="setUp" finished-at="2023-03-06T00:17:23 GST" duration-ms="78" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="clearQueryParamAndHeaders()[pri:0, instance:com.rest.api.automation.bookings.CreateBookingSuccessScenariosTest@1f3aa970]" started-at="2023-02-25T15:42:13 GST" name="clearQueryParamAndHeaders" finished-at="2023-02-25T15:42:13 GST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clearQueryParamAndHeaders -->
-        <test-method is-config="true" signature="getMethodName(java.lang.reflect.Method)[pri:0, instance:com.rest.api.automation.bookings.CreateBookingSuccessScenariosTest@1f3aa970]" started-at="2023-02-25T15:42:13 GST" name="getMethodName" finished-at="2023-02-25T15:42:13 GST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="getMethodName(java.lang.reflect.Method)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2]" started-at="2023-03-06T00:17:23 GST" name="getMethodName" finished-at="2023-03-06T00:17:23 GST" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.rest.api.automation.bookings.CreateBookingSuccessScenariosTest.verifyCreateBooking()]]>
+                <![CDATA[public void com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest.verifyCreateBooking()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getMethodName -->
-        <test-method signature="verifyCreateBooking()[pri:0, instance:com.rest.api.automation.bookings.CreateBookingSuccessScenariosTest@1f3aa970]" started-at="2023-02-25T15:42:13 GST" name="verifyCreateBooking" finished-at="2023-02-25T15:42:16 GST" duration-ms="2457" status="PASS">
+        <test-method signature="verifyCreateBooking()[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2]" started-at="2023-03-06T00:17:23 GST" name="verifyCreateBooking" finished-at="2023-03-06T00:17:25 GST" duration-ms="2253" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCreateBooking -->
-        <test-method is-config="true" signature="reportsUpdate(org.testng.ITestResult)[pri:0, instance:com.rest.api.automation.bookings.CreateBookingSuccessScenariosTest@1f3aa970]" started-at="2023-02-25T15:42:16 GST" name="reportsUpdate" finished-at="2023-02-25T15:42:16 GST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="reportsUpdate(org.testng.ITestResult)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2]" started-at="2023-03-06T00:17:25 GST" name="reportsUpdate" finished-at="2023-03-06T00:17:25 GST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyCreateBooking status=SUCCESS method=CreateBookingSuccessScenariosTest.verifyCreateBooking()[pri:0, instance:com.rest.api.automation.bookings.CreateBookingSuccessScenariosTest@1f3aa970] output={null}]]]>
+                <![CDATA[[TestResult name=verifyCreateBooking status=SUCCESS method=RestfulBookerE2EFlowSuccessTest.verifyCreateBooking()[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportsUpdate -->
-        <test-method is-config="true" signature="afterSuite(org.testng.ITestContext)[pri:0, instance:com.rest.api.automation.bookings.CreateBookingSuccessScenariosTest@1f3aa970]" started-at="2023-02-25T15:42:17 GST" name="afterSuite" finished-at="2023-02-25T15:42:17 GST" duration-ms="219" status="PASS">
+        <test-method is-config="true" signature="getMethodName(java.lang.reflect.Method)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2]" started-at="2023-03-06T00:17:25 GST" name="getMethodName" finished-at="2023-03-06T00:17:25 GST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@175377d3]]>
+                <![CDATA[public void com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest.verifyGetBookingDetails()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMethodName -->
+        <test-method signature="verifyGetBookingDetails()[pri:1, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2]" started-at="2023-03-06T00:17:25 GST" name="verifyGetBookingDetails" finished-at="2023-03-06T00:17:26 GST" duration-ms="1071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGetBookingDetails -->
+        <test-method is-config="true" signature="reportsUpdate(org.testng.ITestResult)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2]" started-at="2023-03-06T00:17:26 GST" name="reportsUpdate" finished-at="2023-03-06T00:17:26 GST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyGetBookingDetails status=SUCCESS method=RestfulBookerE2EFlowSuccessTest.verifyGetBookingDetails()[pri:1, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportsUpdate -->
+        <test-method is-config="true" signature="getMethodName(java.lang.reflect.Method)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2]" started-at="2023-03-06T00:17:26 GST" name="getMethodName" finished-at="2023-03-06T00:17:26 GST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest.verifyUpdateBooking()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMethodName -->
+        <test-method signature="verifyUpdateBooking()[pri:2, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2]" started-at="2023-03-06T00:17:26 GST" name="verifyUpdateBooking" finished-at="2023-03-06T00:17:28 GST" duration-ms="2070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUpdateBooking -->
+        <test-method is-config="true" signature="reportsUpdate(org.testng.ITestResult)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2]" started-at="2023-03-06T00:17:28 GST" name="reportsUpdate" finished-at="2023-03-06T00:17:28 GST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUpdateBooking status=SUCCESS method=RestfulBookerE2EFlowSuccessTest.verifyUpdateBooking()[pri:2, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportsUpdate -->
+        <test-method is-config="true" signature="getMethodName(java.lang.reflect.Method)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2]" started-at="2023-03-06T00:17:28 GST" name="getMethodName" finished-at="2023-03-06T00:17:28 GST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest.verifyPartialUpdateBooking()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMethodName -->
+        <test-method signature="verifyPartialUpdateBooking()[pri:3, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2]" started-at="2023-03-06T00:17:28 GST" name="verifyPartialUpdateBooking" finished-at="2023-03-06T00:17:30 GST" duration-ms="2119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPartialUpdateBooking -->
+        <test-method is-config="true" signature="reportsUpdate(org.testng.ITestResult)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2]" started-at="2023-03-06T00:17:30 GST" name="reportsUpdate" finished-at="2023-03-06T00:17:30 GST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyPartialUpdateBooking status=SUCCESS method=RestfulBookerE2EFlowSuccessTest.verifyPartialUpdateBooking()[pri:3, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportsUpdate -->
+        <test-method signature="verifyDeleteBooking()[pri:4, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2]" started-at="2023-03-06T00:17:30 GST" name="verifyDeleteBooking" finished-at="2023-03-06T00:17:32 GST" duration-ms="2012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeleteBooking -->
+        <test-method is-config="true" signature="getMethodName(java.lang.reflect.Method)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2]" started-at="2023-03-06T00:17:30 GST" name="getMethodName" finished-at="2023-03-06T00:17:30 GST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest.verifyDeleteBooking()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMethodName -->
+        <test-method is-config="true" signature="reportsUpdate(org.testng.ITestResult)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2]" started-at="2023-03-06T00:17:32 GST" name="reportsUpdate" finished-at="2023-03-06T00:17:32 GST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDeleteBooking status=SUCCESS method=RestfulBookerE2EFlowSuccessTest.verifyDeleteBooking()[pri:4, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportsUpdate -->
+        <test-method signature="verifyBookingIsDeleted()[pri:5, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2]" started-at="2023-03-06T00:17:32 GST" name="verifyBookingIsDeleted" finished-at="2023-03-06T00:17:34 GST" duration-ms="1364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyBookingIsDeleted -->
+        <test-method is-config="true" signature="getMethodName(java.lang.reflect.Method)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2]" started-at="2023-03-06T00:17:32 GST" name="getMethodName" finished-at="2023-03-06T00:17:32 GST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest.verifyBookingIsDeleted()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getMethodName -->
+        <test-method is-config="true" signature="reportsUpdate(org.testng.ITestResult)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2]" started-at="2023-03-06T00:17:34 GST" name="reportsUpdate" finished-at="2023-03-06T00:17:34 GST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyBookingIsDeleted status=SUCCESS method=RestfulBookerE2EFlowSuccessTest.verifyBookingIsDeleted()[pri:5, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportsUpdate -->
+        <test-method is-config="true" signature="afterSuite(org.testng.ITestContext)[pri:0, instance:com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest@4c81e7c2]" started-at="2023-03-06T00:17:39 GST" name="afterSuite" finished-at="2023-03-06T00:17:39 GST" duration-ms="207" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@51d2218e]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- com.rest.api.automation.bookings.CreateBookingSuccessScenariosTest -->
+      </class> <!-- com.rest.api.automation.bookings.RestfulBookerE2EFlowSuccessTest -->
     </test> <!-- AutomationTestSuite -->
   </suite> <!-- RESTAPITestSuite -->
 </testng-results>

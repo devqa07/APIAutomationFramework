@@ -9,7 +9,6 @@
 /Users/dev/Desktop/Dev/Ankita/DevHyke/APIAutomationFramework/src/main/java/com/rest/api/automation/pojo/BookingsPojo.java
 /Users/dev/Desktop/Dev/Ankita/DevHyke/APIAutomationFramework/src/main/java/com/rest/api/automation/base/ExtentManager.java
 /Users/dev/Desktop/Dev/Ankita/DevHyke/APIAutomationFramework/src/main/java/com/rest/api/automation/requestBuilder/Bookings.java
-/Users/dev/Desktop/Dev/Ankita/DevHyke/APIAutomationFramework/src/main/java/com/rest/api/automation/utils/EmailUtils.java
 /Users/dev/Desktop/Dev/Ankita/DevHyke/APIAutomationFramework/src/main/java/com/rest/api/automation/utils/CsvUtils.java
 /Users/dev/Desktop/Dev/Ankita/DevHyke/APIAutomationFramework/src/main/java/com/rest/api/automation/utils/ErrorCodeAndErrorMessages.java
 /Users/dev/Desktop/Dev/Ankita/DevHyke/APIAutomationFramework/src/main/java/com/rest/api/automation/responseParser/BookingsBaseTest.java
