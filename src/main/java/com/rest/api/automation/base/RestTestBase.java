@@ -20,7 +20,6 @@ import java.io.StringWriter;
 import java.lang.reflect.Method;
 
 public class RestTestBase {
-
     protected static ExtentReports extent;
     protected static ExtentTest extentLog;
     protected static String testName = "";
@@ -30,7 +29,6 @@ public class RestTestBase {
     protected CsvUtils csv = new CsvUtils();
     protected CommonMethods cm = new CommonMethods();
     protected HeadersUtils headersUtils = new HeadersUtils();
-    protected QueryParamsUtils queryParams = new QueryParamsUtils();//if QueryParams are present in the Request
     protected static final Faker FAKER = new Faker();
 
     @BeforeSuite
@@ -55,14 +53,8 @@ public class RestTestBase {
     }
 
     public void checkErrorResponse(Response res, int statusCode) {
-		Assert.assertEquals(res.getStatusCode(), statusCode);
+        Assert.assertEquals(res.getStatusCode(), statusCode);
     }
-
-//    public String customReport(String message, Response response) {
-//        String format = "<b class='exception' style='display:block; cursor:pointer; user-select:none' onclick='($(\".exception\").click(function(){ $(this).next().toggle()}))'>"
-//                + message + "</b>" + "<pre style='display:none'>" + response.asString() + "</pre>";
-//        return format;
-//    }
 
     @BeforeMethod
     public void getMethodName(Method m) {
@@ -77,7 +69,7 @@ public class RestTestBase {
     }
 
     @AfterMethod
-    public void reportsUpdate(ITestResult result) throws IOException {
+    public void reportsUpdate(ITestResult result) {
 
         if (result.getStatus() == ITestResult.FAILURE) {
             extentLog.log(Status.FAIL,

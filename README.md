@@ -40,15 +40,15 @@ Maven is used as build tool for this framework
 
 How to run test cases:
 
-*Right click on testng.xml to execute the complete suite
+* Click on testng.xml to execute the complete suite
 
-*Eclipse/IntelliJ -Right click to any test class and run
+* Eclipse/IntelliJ -Right click to any test class and run
 
 **Running from CMD Line :**
 
 1.Navigate to framework/project path and use the below command
 
-2.mvn clean test 
+2.mvn clean install 
 
 **test-output:**
 

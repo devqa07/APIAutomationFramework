@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 public class RestfulBookerErrorsTest extends RestTestBase {
     SimpleDateFormat formatter = new SimpleDateFormat("YYYY-MM-dd");
     Bookings bookingReq = new Bookings();
-    List<String[]> data = csv.readData_CSV(TestConstants.BOOKING_CSV);
+    List<String[]> data = csv.readCsvData(TestConstants.BOOKING_CSV);
     String body, firstName = FAKER.name().firstName(), lastName = FAKER.name().lastName(), additionalNeeds = "Breakfast", totalPrice = "100",
             checkIn = formatter.format(FAKER.date().past(20, TimeUnit.DAYS)),
             checkOut = formatter.format(FAKER.date().future(5, TimeUnit.DAYS)), bookingId = csv.getSpecificCSVData(data, 0, 1);

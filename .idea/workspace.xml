@@ -6,6 +6,38 @@
   <component name="ChangeListManager">
     <list default="true" id="f61bf594-54e7-410d-83fe-c752e2fc5800" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rest/api/automation/base/ExtentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/automation/base/ExtentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rest/api/automation/base/RestTestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/automation/base/RestTestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rest/api/automation/requestBuilder/Bookings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/automation/requestBuilder/Bookings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rest/api/automation/utils/ConfigHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/automation/utils/ConfigHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rest/api/automation/utils/CsvUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/automation/utils/CsvUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rest/api/automation/utils/ErrorCodeAndErrorMessages.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rest/api/automation/utils/QueryParamsUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rest/api/automation/utils/RestAPIUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/automation/utils/RestAPIUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rest/api/automation/utils/TestConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rest/api/automation/utils/TestConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rest/api/automation/bookings/RestfulBookerE2EFlowSuccessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rest/api/automation/bookings/RestfulBookerE2EFlowSuccessTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/rest/api/automation/bookings/RestfulBookerErrorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/rest/api/automation/bookings/RestfulBookerErrorsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rest/api/automation/base/RestTestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rest/api/automation/base/RestTestBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rest/api/automation/requestBuilder/Bookings.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rest/api/automation/requestBuilder/Bookings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rest/api/automation/utils/ConfigHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rest/api/automation/utils/ConfigHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rest/api/automation/utils/CsvUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rest/api/automation/utils/CsvUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rest/api/automation/utils/ErrorCodeAndErrorMessages.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rest/api/automation/utils/QueryParamsUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/rest/api/automation/utils/RestAPIUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/rest/api/automation/utils/RestAPIUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/RESTAPITestSuite/AutomationTestSuite.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/RESTAPITestSuite/AutomationTestSuite.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/RESTAPITestSuite/AutomationTestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/RESTAPITestSuite/AutomationTestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/RESTAPITestSuite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/RESTAPITestSuite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/RESTAPITestSuite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/RESTAPITestSuite/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/REST-API-AutomationReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/REST-API-AutomationReport.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

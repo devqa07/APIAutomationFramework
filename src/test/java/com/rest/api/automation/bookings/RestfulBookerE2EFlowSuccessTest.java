@@ -19,7 +19,7 @@ public class RestfulBookerE2EFlowSuccessTest extends RestTestBase {
     BookingsBaseTest bs = new BookingsBaseTest();
     Bookings bookingReq = new Bookings();
     SimpleDateFormat formatter = new SimpleDateFormat("YYYY-MM-dd");
-    List<String[]> data = csv.readData_CSV(TestConstants.BOOKING_CSV);
+    List<String[]> data = csv.readCsvData(TestConstants.BOOKING_CSV);
     String body, firstName = csv.getSpecificCSVData(data, 1, 1), lastName = csv.getSpecificCSVData(data, 2, 1),
             totalPrice = csv.getSpecificCSVData(data, 3, 1), depositPaid = csv.getSpecificCSVData(data, 4, 1),
             additionalNeeds = csv.getSpecificCSVData(data, 5, 1), checkIn = formatter.format(FAKER.date().past(20, TimeUnit.DAYS)),

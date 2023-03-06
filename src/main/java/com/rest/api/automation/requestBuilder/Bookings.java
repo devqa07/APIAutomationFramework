@@ -10,7 +10,7 @@ import org.json.JSONObject;
 import java.util.List;
 
 public class Bookings extends RestTestBase {
-    List<String[]> data = csv.readData_CSV(TestConstants.BOOKING_CSV);
+    List<String[]> data = csv.readCsvData(TestConstants.BOOKING_CSV);
     String token;
 
     public JSONObject BookingDetailsBody(String firstName, String lastName, String totalPrice, String depositPaid,

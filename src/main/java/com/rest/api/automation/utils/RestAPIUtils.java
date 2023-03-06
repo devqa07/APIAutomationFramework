@@ -39,11 +39,10 @@ public class RestAPIUtils {
         }
         switch (env.toLowerCase()) {
             case "qa":
-            case "test":
                 dbEnv = TestConstants.ENV_QA;
                 break;
             case "dev":
-                dbEnv = TestConstants.ENV_QA;
+                dbEnv = TestConstants.ENV_DEV;
                 break;
             default:
                 System.out.println("Invalid Environment in Config.properties file");
@@ -59,20 +58,6 @@ public class RestAPIUtils {
             return db_Name;
         }
         return "Invalid or null DB name";
-    }
-
-    /**
-     * Handling only one Key
-     *
-     * @param response
-     * @param key
-     * @return Handling only one Key
-     * @deprecated
-     */
-    public static String getSpecificJsonAttribute(Response response, String key) {
-        JSONObject json = new JSONObject(response.asString());
-        JSONObject data = json.getJSONObject("data");
-        return data.getString(key);
     }
 
     /**
@@ -96,29 +81,6 @@ public class RestAPIUtils {
         JSONObject json = new JSONObject(response.asString());
         for (int i = 0; i < key.length; i++) {
             map.put(key[i], json.getInt(key[i]));
-        }
-        return map;
-    }
-
-    /**
-     * Extends the jsonObject to retrieve value. For Instance the JSONObject data
-     * has nested JSONObject user which has user details or any nested JSONObject
-     * Need to pass that nested JSONObject as String, the method will merge that
-     * with data and retrieves to fetch the values.
-     *
-     * @param response
-     * @param object
-     * @param key
-     * @return
-     */
-    public static LinkedHashMap<String, String> getSpecificJsonAttribute(Response response, String object,
-                                                                         String[] key) {
-        LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
-        JSONObject json = new JSONObject(response.asString());
-        JSONObject data = json.getJSONObject("data");
-        JSONObject dataObject = data.getJSONObject(object);
-        for (int i = 0; i < key.length; i++) {
-            map.put(key[i], dataObject.getString(key[i]));
         }
         return map;
     }

@@ -9,5 +9,4 @@ public class TestConstants {
     public static PrintStream REQUEST_CAPTURE;
 	public static final String BOOKING_CSV = "Booking";
 	public static final String COOKIE_HEADER = "Cookie";
-
 }
