@@ -32,7 +32,7 @@ public class RestTestBase {
     protected static final Faker FAKER = new Faker();
 
     @BeforeSuite
-    public void setUp() throws IOException {
+    public void setUp() {
         extent = ExtentManager.getExtentReport();
     }
 
@@ -89,7 +89,7 @@ public class RestTestBase {
 
     @AfterSuite
     public void afterSuite(ITestContext context) {
-        System.out.println("in after suite************************************************");
+        System.out.println("In after suite************************************************");
         extent.flush();
     }
 }
